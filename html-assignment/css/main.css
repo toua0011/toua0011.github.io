@@ -1,0 +1,62 @@
+
+body {
+  font-family: 'Arial', sans-serif; 
+  font-size: 18px;                
+}
+
+header, footer {
+  background-color: #0963a8;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px 3px rgb(0, 0, 0);   
+               
+}
+
+.site-title {
+  color: #ffffff;
+  text-transform: uppercase; 
+}
+
+.container{
+  max-width: 500px;
+  width: 100%;
+}
+.stayl{
+  color: #ffffff;
+  text-transform: uppercase;
+  
+}
+
+#my-image {
+  box-shadow: 0 0 2px 1px black;
+}
+
+
+.hobbies-list {
+  list-style-type: square;
+}
+
+.hobbies-list li:nth-child(odd) {
+  background-color: #b2b2b2;
+  padding: 5px; 
+              
+}
+
+
+
+nav a {
+  text-decoration: none;       
+  background-color: #f4f4f4;   
+  border: 2px solid #333;      
+  padding: 10px 20px;          
+  color: #333;                 
+  display: inline-block;       
+  border-radius: 5px;          
+}
+
+
+nav a:hover, nav a:focus {
+  background-color: #333;      
+  color: white;                
+  outline: none;               
+}
