@@ -27,6 +27,8 @@ header, footer {
   
 }
 
+
+
 #my-image {
   box-shadow: 0 0 2px 1px black;
 }
@@ -42,7 +44,13 @@ header, footer {
               
 }
 
-
+nav ul {
+  display: flex;            
+  justify-content: center;
+  gap: 20px;  
+  list-style-type: none;
+  padding: 0;
+}
 
 nav a {
   text-decoration: none;       
@@ -60,3 +68,4 @@ nav a:hover, nav a:focus {
   color: white;                
   outline: none;               
 }
+
