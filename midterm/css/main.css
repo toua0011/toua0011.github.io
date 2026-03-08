@@ -34,6 +34,8 @@ header h1 {
     transform: translate(-50%, -50%); /* Centers the text perfectly */
     color: white;
     margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px black;
 }
 
 /* Navigation */
