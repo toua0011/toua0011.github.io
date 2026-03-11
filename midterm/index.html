@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nidal Spec Performance | Custom Warehouse</title>
+    <!-- External CSS file -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="home">
 
     <div class="wrapper">
+        <!-- header uses <img> tag for the image -->
         <header>
+            <!-- Header image -->
             <img src="images/hero-car.jpg" alt="Custom car inside a warehouse" class="hero-img">
+
             <h1>Nidal Spec Performance</h1>
         </header>
-
+        <!-- NAVIGATION -->
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-
-        <main>
-            <section id="story">
+        <!-- MAIN CONTENT -->
+        <main id="story">
+            
+            <article>
                 <h2>The Art of the Build</h2>
                 <img src="images/side-car.jpg" alt="Engine detail" id="side-img">
                 <p>
@@ -35,10 +40,11 @@
                 <p>
                     Working with us is easy and honest. We love what we do, and we want you to love your car even more than you did before. We do not just fix vehicles; we reinvent them so they are ready for the road. Every project starts with your vision and ends with a masterpiece that you will be proud to drive every day.
                 </p>
-            </section>
-
-            <section id="facts">
-                <h2>Warehouse Features</h2>
+            </article>
+            <!-- projects section -->
+            <!-- Proper unordered list <ul><li> syntax -->
+            <section>
+                <h3>Warehouse Features</h3>
                 <ul>
                     <li>A testing room to see how much power your car has.</li>
                     <li>A professional booth for high-quality new paint.</li>
@@ -47,8 +53,9 @@
                 </ul>
             </section>
 
-            <section >
-                <h2>Inquire About a Build</h2>
+            <section>
+                <h3>Inquire About a Build</h3>
+                <!-- forms -->
                 <form id="contact" action="#" method="post">
                     <div class="form-group">
                         <label for="user-name">Your Name</label>
@@ -71,12 +78,12 @@
                         <label><input type="radio" name="tour" value="no"> No</label>
                         <label><input type="radio" name="tour" value="maybe"> Maybe</label>
                     </div>
-
+                    <!-- Submit button -->
                     <button type="submit" class="submit-btn">SEND REQUEST</button>
                 </form>
             </section>
         </main>
-
+        <!-- footer -->
         <footer>
             <p>&copy; 2026 Nidal Spec Performance Warehouse.</p>
         </footer>
