@@ -276,3 +276,78 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/*PHONE VERSION*/
+@media (max-width: 600px) {
+
+    /* HEADER */
+    .header-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 70%;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* SERVICES */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* TEAM */
+    .team-member {
+        display: block;
+    }
+
+    .team-member img,
+    .member-info {
+        width: 100%;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* TABLE */
+    table {
+        font-size: 0.9rem;
+    }
+
+    /* BUTTONS */
+    .btn-yellow,
+    .btn-dark,
+    .btn-outline {
+        width: 100%;
+    }
+}
