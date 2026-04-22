@@ -1,0 +1,278 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: #222;
+    padding: 20px 0;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: #c78c06;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a.active {
+    background: #c78c06;
+    color: #222;
+}
+
+/* SEARCH */
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+}
+
+.search-container button {
+    background: #c78c06;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background: url('../images/main-banner.jpg') center/cover no-repeat;
+    padding: 10%;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 30px;
+    max-width: 5000px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.btn-yellow {
+    display: inline-block;
+    margin-top: 15px;
+    background: #c78c06;
+    color: #222;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+    background: #ffe6ac;
+    padding: 40px 0;
+}
+
+.about-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* SERVICES */
+.services {
+    padding: 40px 0;
+}
+
+.services-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.service-card {
+    background: #ffe6ac;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.btn-dark {
+    display: block;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* VISION */
+.vision {
+    background: url('../images/vision.jpg') center/cover no-repeat;
+    color: white;
+    text-align: left;
+    padding: 80px 20px;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-top: 15px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* TEAM */
+.team {
+    padding: 40px 0;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.member-info {
+    background: #ffe6ac;
+    padding: 20px;
+}
+
+.role {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 40px 0;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.btn-dark-small {
+    background: #222;
+    color: #c78c06;
+    padding: 8px 15px;
+    border: none;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th, td {
+    border: 1px solid #222;
+    padding: 10px;
+}
+
+th {
+    background: #ffe6ac;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: #c78c06;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+
+
+/* DESKTOP */
+@media (min-width: 760px) {
+
+    .header-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    /* SERVICES LAYOUT (2 TOP, 3 BOTTOM) */
+    .services-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .service-card:nth-child(1),
+    .service-card:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .service-card:nth-child(3),
+    .service-card:nth-child(4),
+    .service-card:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    /* TEAM */
+    .team-member {
+        display: flex;
+    }
+
+    .team-member img,
+    .member-info {
+        width: 50%;
+    }
+
+    .team-member:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
